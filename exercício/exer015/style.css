@@ -1,0 +1,36 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-image: linear-gradient(to right,#F59900,#F5DA31,#F59138,#F5B700,#F5F200,#F5CB52);
+}
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 10px rgb(13, 2, 100);
+    width: 600px;
+    padding: 30px;
+    margin: auto;
+    h1{
+        color: #f30606;
+    }
+    h2{
+        color:#048af7;
+    }
+    p{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p{text-align: justify;}
+
+}
+div{
+    display: inline-block;
+    background-color: #06f369;
+    border: 10px solid black;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+}
+div:hover{
+    background-color: #f30606;
+}
