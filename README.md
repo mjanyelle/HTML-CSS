@@ -2,7 +2,7 @@
 curso  
 
 <ol>
-  <li>
+  <ul>
     <li><a href="https://mjanyelle.github.io/HTML-CSS/exercício/exer001"> executar atividade 01</a></li>
     <li><a href=" https://mjanyelle.github.io/HTML-CSS/exercício/exer002">executar atividade 02</a></li>
     <li><a href=" https://mjanyelle.github.io/HTML-CSS/exercício/exer003">executar atividade 03</a></li>
@@ -21,5 +21,5 @@ curso
     <li><a href=" https://mjanyelle.github.io/HTML-CSS/exercício/exer016">executar atividade 016</a></li>
    <li><a href=" https://mjanyelle.github.io/HTML-CSS/exercício/exer017">executar atividade 017</a></li>
     <li><a href=" https://mjanyelle.github.io/HTML-CSS/exercício/exer018">executar atividade 018</a></li>
-  </li>
+  </ul>
 </ol>
