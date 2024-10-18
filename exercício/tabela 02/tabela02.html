@@ -18,6 +18,9 @@
             text-align: left;
             vertical-align: middle;
         }
+        tbody>tr:nth-child(odd){
+            background-color: cornflowerblue;
+        }
         td.num{
             text-align: right;
         }
@@ -38,9 +41,9 @@
     <h1>População dos Estados do Brasil</h1>
     <table>
         <tr>
-    <th>Estado</th>
-         
-    <th>População</th>
+    <th scope="col">Estado</th>
+
+    <th scope="col" style="width: 300px;">População</th>
 
     </tr>
 
@@ -243,14 +246,9 @@
     </tr>
     <tbody>
         <tr>
-        <th> Total de Habitantes</th>
-        <th class="num">212.166.000
-        </th>
+        <th scope="row"> Total de Habitantes</th>
+        <td class="num">212.166.000
+        </td>
        </tr>
     </tbody>
-</table>
-
-    </table>
-  
-</body>
-</html>
+    
