@@ -71,7 +71,7 @@ nav> a:hover{
     color: var(--cor5);
 }
 
-table {
+main {
  min-width: 300px;
  max-width: 1000px;
  padding: 20px;
@@ -82,7 +82,7 @@ table {
  border-bottom-right-radius: 10px;           
 }
 
-table {
+main h1 {
     color: var(--cor5);
     font-family: var(--fonte-android);
 }
