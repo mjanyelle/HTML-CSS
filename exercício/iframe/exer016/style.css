@@ -1,0 +1,16 @@
+body{
+    background-color: #ddd;
+}
+*{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    background-color: white;
+    border-radius: 0%;
+    box-shadow: 5px 10px rgb(13, 2, 100);
+    width: 600px;
+    padding: 10%;
+    margin: auto;
+}
+
