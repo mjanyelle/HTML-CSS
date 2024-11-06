@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo de Filmes com Sinopse</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .detalhes{
+            div: none;
+        }
+        .detalhes.ativo {
+            div: block;
+        }
+        .filme-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .filme-item {
+            cursor: pointer;
+            text-align: center;
+        }
+        .filme-item img {
+            width: 150px;
+            height: 220px;
+            object-fit: cover;
+        }
+        #sinopse {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FILMES</h1>
+    <!-- Iframe para exibir os trailers -->
+    <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/video_inicial" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <!-- Container para imagens, títulos e sinopse -->
+    <div class="filme-container">
+        <div class="filme-item" onclick="mostrarFilme('https://youtu.be/frKZeQ5Mqws?si=YapZG2AnZzfXqNCL', 'O jovem Ben, de dezenove anos, subitamente reaparece na casa de sua família na véspera de natal. Durante as próximas turbulentas 24 horas, segredos são revelados e sua mãe faz tudo o que pode para manter o filho viciado longe das drogas.')">
+            <img src="4704333.jpg" alt="Filme 1">
+            <p>O RETORNO DE BEN</p>
+        </div>
+        <div class="filme-item" onclick="mostrarFilme('https://www.youtube.com/embed/codigo_video2', 'Tom passou a vida inteira perseguindo seu desejo de viajar e colecionando carimbos em seu passaporte. Confrontada com as expectativas da sociedade ao fazer 30 anos, ela chega em um vinhedo no sul da França para visitar David, o único homem com quem ela já pensou em se comprometer. David decide cancelar todos os planos que ele já fez e buscar o relacionamento que ele nunca foi capaz de esquecer, e Tom deve decidir entre se comprometer com uma vida convencional ou continuar suas aventuras.')">
+            <img src="0261191_335.jpg" alt="Filme 2">
+            <p>SOMENTE VOCÊ</p>
+        </div>
+        <div class="filme-item" onclick="mostrarFilme('https://www.youtube.com/embed/codigo_video3', 'Dustin é o astro de beisebol da cidade que decide largar tudo e deixar uma vida inteira para trás para perseguir seu sonho de jogar a liga principal. Doze anos se passam e, hoje jogando num time da divisão secundária, ele é rejeitado ano após ano, sucessivamente, pelos grandes clubes do país. De coração partido e desiludido com o mundo esportivo, Dustin decide que é hora de parar de perseguir uma ilusão e abandonar o beisebol de vez.')">
+            <img src="looke_1010_670.jpg" alt="Filme 3">
+            <p>UM AMOR DO PASSADO</p>
+        </div>
+    </div>
+    <div class="filme-item" onclick="mostrarFilme('https://www.youtube.com/embed/codigo_video3', 'Uma mulher e seu pai ferido ficam presos pelas águas da enchente em sua casa durante um furacão. Com a tempestade aumentando, eles logo descobrem uma ameaça ainda maior do que a água: um ataque implacável de um bando de jacarés gigantes.')">
+        <img src="image.jpg" alt="Filme 4">
+        <p>UM AMOR DO PASSADO</p>
+    </div>
+</div>
+    <!-- Div para mostrar a sinopse -->
+    <div id="sinopse">
+        <h3>Sinopse</h3>
+        <p id="descricao">Clique em um filme para ver a sinopse e o trailer.</p>
+    </div>
+
+    <!-- Script para trocar o URL do iframe e mostrar a sinopse -->
+    <script>
+        function mostrarFilme(url, sinopse) {
+            document.getElementById('player').src = url;
+            document.getElementById('descricao').textContent = sinopse;
+        }
+    </script>
+
+</body>
+</html>

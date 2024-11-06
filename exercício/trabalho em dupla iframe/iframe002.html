@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailers de Filmes</title>
+    <style>
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .video {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        iframe {
+            width: 560px;
+            height: 315px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assista aos Trailers dos Filmes</h1>
+    <div class="video-container">
+        <div class="video">
+            <h3>O Poderoso Chefão</h3>
+            <iframe src="https://www.youtube.com/embed/sY1S34973zA" title="Trailer de O Poderoso Chefão" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <h3>Interestelar</h3>
+            <iframe src="https://www.youtube.com/embed/zSWdZVtXT7E" title="Trailer de Interestelar" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <h3>Parasita</h3>
+            <iframe src="https://www.youtube.com/embed/5xH0HfJHsaY" title="Trailer de Parasita" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
