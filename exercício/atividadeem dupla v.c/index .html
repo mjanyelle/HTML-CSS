@@ -1,76 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo de Filmes com Sinopse</title>
-    <style>
-        .filme-container {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-        .filme-item {
-            cursor: pointer;
-            text-align: justify;
-        }
-        .filme-item img {
-            width: 150px;
-            height: 220px;
-            object-fit: cover;
-            justify-content: center;
-        }
-        iframe {
-            width: 95%;
-            height: 400px;
-            border: 1px solid #000000;
-        }
-        #sinopse {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <h1>FILMES</h1>
-    <!-- Iframe para exibir os trailers -->
-    <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/video_inicial" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-    <!-- Container para imagens, títulos e sinopse -->
-    <div class="filme-container">
-        <div class="filme-item" onclick="mostrarFilme('https://youtu.be/frKZeQ5Mqws?si=YapZG2AnZzfXqNCL', 'O jovem Ben, de dezenove anos, subitamente reaparece na casa de sua família na véspera de natal. Durante as próximas turbulentas 24 horas, segredos são revelados e sua mãe faz tudo o que pode para manter o filho viciado longe das drogas.')">
-            <img src="4704333.jpg" alt="Filme 1">
-            <p>O RETORNO DE BEN</p>
-        </div>
-        <div class="filme-item" onclick="mostrarFilme('https://www.youtube.com/embed/codigo_video2', 'Tom passou a vida inteira perseguindo seu desejo de viajar e colecionando carimbos em seu passaporte. Confrontada com as expectativas da sociedade ao fazer 30 anos, ela chega em um vinhedo no sul da França para visitar David, o único homem com quem ela já pensou em se comprometer. David decide cancelar todos os planos que ele já fez e buscar o relacionamento que ele nunca foi capaz de esquecer, e Tom deve decidir entre se comprometer com uma vida convencional ou continuar suas aventuras.')">
-            <img src="0261191_335.jpg" alt="Filme 2">
-            <p>SOMENTE VOCÊ</p>
-        </div>
-        <div class="filme-item" onclick="mostrarFilme('https://www.youtube.com/embed/codigo_video3', 'Dustin é o astro de beisebol da cidade que decide largar tudo e deixar uma vida inteira para trás para perseguir seu sonho de jogar a liga principal. Doze anos se passam e, hoje jogando num time da divisão secundária, ele é rejeitado ano após ano, sucessivamente, pelos grandes clubes do país. De coração partido e desiludido com o mundo esportivo, Dustin decide que é hora de parar de perseguir uma ilusão e abandonar o beisebol de vez.')">
-            <img src="looke_1010_670.jpg" alt="Filme 3">
-            <p>UM AMOR DO PASSADO</p>
-        </div>
-    </div>
-    <div class="filme-item" onclick="mostrarFilme('https://www.youtube.com/embed/codigo_video3', 'Uma mulher e seu pai ferido ficam presos pelas águas da enchente em sua casa durante um furacão. Com a tempestade aumentando, eles logo descobrem uma ameaça ainda maior do que a água: um ataque implacável de um bando de jacarés gigantes.')">
-        <img src="image.jpg" alt="Filme 4">
-        <p>UM AMOR DO PASSADO</p>
-    </div>
-</div>
-    <!-- Div para mostrar a sinopse -->
-    <div id="sinopse">
-        <h3>Sinopse</h3>
-        <p id="descricao">Clique em um filme para ver a sinopse e o trailer.</p>
-        <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Completo em HTML</title>
+    <link rel="icon" href="o-que-e-html.jpg" type="image/x-icon">
     <style>
+        link rel="preconnect" href="https://fonts.googleapis.com">
+        link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&display=swap" rel="stylesheet">;
         body {
-            font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f9;
+            background-color:#94ebfa;
             margin: 0;
             padding: 0;
         }
@@ -161,7 +102,7 @@
             <h2>Sobre o Projeto</h2>
             <p>Este projeto foi criado para demonstrar o uso de diferentes elementos HTML. Inclui cabeçalho, rodapé, imagens, links, tabelas, listas, formulários e até mesmo elementos multimídia.</p>
             <p>HTML é uma linguagem de marcação essencial para o desenvolvimento web, e este exemplo mostra como muitos de seus elementos podem ser aplicados em uma única página.</p>
-            <img src="https://via.placeholder.com/800x400" alt="Imagem de exemplo">
+            <iframe src="Captura de tela 2024-11-07 084018.png" width="1500" height="600"></iframe>
         </section>
 
         <!-- Seção Tabela -->
@@ -230,11 +171,7 @@
         <section id="multimidia">
             <h2>Elementos Multimídia</h2>
             <h3>Vídeo Incorporado:</h3>
-            <video width="100%" controls>
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
-
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/16250647?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Xuxa Só Para Baixinhos 10"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
             <h3>Áudio Incorporado:</h3>
             <audio controls>
                 <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
@@ -244,21 +181,8 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Meu Projeto HTML. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Meu Projeto HTML. Todos os direitos reservados criado por Maria Janyelle .</p>
     </footer>
-
-</body>
-</html>
-
-    </div>
-
-    <!-- Script para trocar o URL do iframe e mostrar a sinopse -->
-    <script>
-        function mostrarFilme(url, sinopse) {
-            document.getElementById('player').src = url;
-            document.getElementById('descricao').textContent = sinopse;
-        }
-    </script>
 
 </body>
 </html>
