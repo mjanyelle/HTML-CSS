@@ -46,7 +46,7 @@ section#redes-sociais {
 section#redes-sociais img{
     width: 100px; /* Tamanho da imagem */
     height: 100px;
+    border-radius: 50px;/* desixar a imagem redonda*/
     box-shadow: 2px 5px rgba(0,0,0,0.400);
-    border-radius: 50%; /* Deixa a imagem redonda */
     box-sizing: border-box;
 }
