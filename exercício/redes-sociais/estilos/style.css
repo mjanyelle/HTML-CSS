@@ -45,8 +45,14 @@ section#redes-sociais {
 }
 section#redes-sociais img{
     width: 100px; /* Tamanho da imagem */
-    height: 100px;
+    height: 90px;
+    height: 10vh;
+    padding: 20px;
     border-radius: 50px;/* desixar a imagem redonda*/
     box-shadow: 2px 5px rgba(0,0,0,0.400);
     box-sizing: border-box;
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid rgba( 255, 255, 255, 0.637)
 }
