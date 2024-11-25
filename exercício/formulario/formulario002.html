@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informações da Criança</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .child-container {
+      margin-bottom: 20px;
+    }
+    .child-image {
+      display: none;
+      margin-top: 10px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <h1>Informações da Prova</h1>
+  
+  <div class="child-container">
+    <p><strong>Nome:</strong> <a href="#" onclick="showImage('child1')">anna Silva</a></p>
+    <p><strong>Data da Prova:</strong> 21/11/2024</p>
+    <p><strong>Nível:</strong> Intermediário</p>
+    <p><strong>Nota:</strong> 8.5</p>
+    <img id="child1" class="child-image" src="32946410-sorridente-crianca-ao-ar-livre-felicidade-dentro-natureza-fofa-retrato-gratis-foto 02.jpg" alt="Foto de João Silva">
+  </div>
+
+  <div class="child-container">
+    <p><strong>Nome:</strong> <a href="#" onclick="showImage('child2')">Maria Santos</a></p>
+    <p><strong>Data da Prova:</strong> 21/11/2024</p>
+    <p><strong>Nível:</strong> Avançado</p>
+    <p><strong>Nota:</strong> 9.0</p>
+    <img id="child2" class="child-image" src="28532289-uma-lindo-crianca-menina-desfrutando-a-verao-sol-generativo-ai-gratis-foto 02.jpeg" alt="Foto de Maria Santos">
+  </div>
+  <script>
+    function showImage(id) {
+      const image = document.getElementById(id);
+      if (image.style.display === "none" || image.style.display === "") {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
