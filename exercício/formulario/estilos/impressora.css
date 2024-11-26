@@ -1,0 +1,21 @@
+@charset "UTF-8";
+*{
+    margin: 0PX;
+    padding: 0PX;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.sem;
+    line-height: 1.53;
+
+}
+article{
+    width: 100%;
+
+}
+menu{
+    display: none;
+}
+article::after{
+    content: 'esse artigo foi impresso a traves do site www.mariajanyelle.com.br';
+}
